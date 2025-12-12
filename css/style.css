@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #0A143A;
+    background-color: #FFFFFF;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -95,6 +96,7 @@ body {
 }
 
 /* page-content */
+
 .page-content {
     display: grid;
     grid-template-columns: 9fr 3fr;
@@ -103,9 +105,147 @@ body {
 }
 
 .page-content .page-title {
+    font-weight: bold;
     font-size: 24px;
-    line-height: 27px;
+    line-height: 28px;
+    margin: 0 0 25px 0;
 }
+
+/* main single */
+
+.main-single {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* content section */
+
+.content {
+    max-width: 460px;
+    margin-right: 30px;
+}
+
+/* slider */
+.swiper-container {
+    max-width: 460px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper img {
+    border-radius: 3px;
+}
+
+/* content text */
+.content-text {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+/* author */
+
+.author {
+    min-width: 264px;
+}
+
+.single-price {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 25px 0;
+}
+
+.author-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 30px 0;
+}
+
+.auther-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.rating {
+    margin-bottom: 5px;
+}
+
+.rating-counter {
+    margin-left: 10px;
+    color: #0A143A;
+    opacity: 0.5;
+}
+
+.author-status {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* button */
+
+.button-block {
+    display: block;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 14px;
+    border: none;
+}
+
+.button-success {
+    color: #FFFFFF;
+    background-color: #14B4BE;
+    border-radius: 5px;
+}
+
+/* cards */
 
 .cards {
     display: flex;
@@ -168,12 +308,14 @@ body {
 }
 
 /* sidebar */
+
 .sidebar .page-title {
     font-size: 18px;
     line-height: 21px;
 }
 
 /* service */
+
 .service {
     margin-bottom: 25px;
 }
